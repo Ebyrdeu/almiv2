@@ -1,0 +1,115 @@
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.main-3 {
+    padding-top: 90px;
+    position: relative;
+}
+
+.main-3:after {
+    content: url("/assets/img/other/element2.png");
+    position: absolute;
+    animation: rotation 30s infinite linear;
+    top: 200px;
+    left: -50px;
+}
+
+.main-3_title {
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 77px;
+    z-index: 9999;
+}
+
+/*CARD*/
+.person-card {
+    margin-right: 40px;
+    margin-bottom: 90px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 99999;
+    clip: rect(1px, 10em, 3rem, 2ch);
+    background: #fff;
+}
+
+.person-card:last-child {
+    margin-right: 0;
+}
+
+.person-card:after {
+    position: absolute;
+    background-image: url('/assets/img/other/element3.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    content: '';
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    z-index: -9999;
+    left: -16px;
+    bottom: 0;
+}
+
+.person-card__img {
+    position: absolute;
+    left: 16px;
+    top: -50px;
+
+}
+
+.person-card__name {
+    margin-top: 100px;
+    font-size: 24px;
+    color: #8B939C;
+
+}
+
+.person-card__text {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.person-card__name, .person-card__text {
+    padding: 20px;
+}
+@media only screen and (max-width: 768px ) {
+    .person-card {
+        margin-right: 0;
+    }
+    .person-card:after {
+
+    }
+    .main-3_title {
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 576px ) {
+
+    .person-card:after {
+        left: 0;
+    }
+
+    .person-card__img {
+        display: block;
+        margin: auto;
+        left: 0;
+        right: 0;
+
+    }
+    .person-card__name, .person-card__text {
+        text-align: center;
+    }
+}
