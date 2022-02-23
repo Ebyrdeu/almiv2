@@ -1,0 +1,118 @@
+.main-4 {
+    background: #EDEDED;
+}
+
+.main-4_title {
+
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+/*CARD FOR PRICE*/
+
+
+.price-card {
+    border-radius: 100px 0 100px 0;
+    width: 400px;
+    height: 603px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    position: relative;
+    margin: 40px 30px;
+}
+
+/*TRIANGLE     content: url("/assets/img/other/element4.svg"); */
+.price-card__price {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+}
+
+.price-card_triangle:before {
+    position: absolute;
+    content: url("/assets/img/other/element4.svg");
+    z-index: 0;
+    right: 0;
+    top: 0;
+}
+
+.price-card__price > h2 {
+    height: 100%;
+    width: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    padding-right: 5px;
+    z-index: 9999;
+}
+
+
+/*UPPER*/
+.price-card_upper {
+    position: relative;
+    background: #353D44;
+    width: 100%;
+    height: 187px;
+    border-radius: 100px 0 0 0;
+}
+
+.price-card__title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    padding-left: 60px;
+    padding-top: 70px;
+}
+
+/*Lower*/
+.price-card_lower {
+    position: relative;
+}
+
+.price-card_about {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.price-card__small-info {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 10px 40px;
+}
+.price-card__triangle_box {
+    position: absolute;
+}
+.price-card_btn {
+
+    position: relative;
+    border: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background: #5447FF;
+    border-radius: 0;
+    left: -20px;
+}
+.price-card_btn:after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent #443ACA transparent;
+    left: 0;
+    top: -20px;
+}
+@media only screen and (max-width: 568px) {
+    .price-card__title {
+        padding-left: 30px;
+    }
+    .price-card_about {
+        font-size: 30px;
+    }
+}
