@@ -17,7 +17,7 @@
 }
 .main-2_a:after {
     position: absolute;
-    content: url("/assets/img/other/Element.svg");
+    content: url("./assets/img/other/Element.svg");
     height: 300px;
     width: auto;
     right: 0;
