@@ -31,7 +31,7 @@
 
 .price-card_triangle:before {
     position: absolute;
-    content: url("/assets/img/other/element4.svg");
+    content: url("./assets/img/other/element4.svg");
     z-index: 0;
     right: 0;
     top: 0;
