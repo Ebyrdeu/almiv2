@@ -13,7 +13,7 @@
 }
 
 .main-3:after {
-    content: url("./assets/img/other/element2.png");
+    content: url("/assets/img/other/element2.png");
     position: absolute;
     animation: rotation 30s infinite linear;
     top: 200px;
